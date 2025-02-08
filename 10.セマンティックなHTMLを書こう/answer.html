@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <!-- headerに変更 -->
+    <header class="header">
       <h1>サンプルサイト</h1>
-      <nav>
+      <!-- navタグを使用 -->
+      <nav class="global-nav">
         <ul>
           <li><a href="#">トップページ</a></li>
           <li><a href="#">サービス紹介</a></li>
@@ -18,22 +20,25 @@
         </ul>
       </nav>
     </header>
-    <div class="container">
-      <main>
-        <article>
-          <header>
-            <h2>ニュース1</h2>
-            <p>ここにニュースの内容が表示されます。</p>
-          </header>
-        </article>
-        <article>
-          <header>
-            <h2>ニュース2</h2>
-            <p>ここにニュースの内容が表示されます。</p>
-          </header>
-        </article>
-      </main>
-      <aside>
+    
+    <!-- mainタグを使用 -->
+    <main class="container">
+      <!-- articleタグを使用 -->
+      <article class="main">
+        <!-- sectionタグを使用-->
+        <section class="article">
+          <h2>ニュース1</h2>
+          <p>ここにニュースの内容が表示されます。</p>
+        </section>
+        <!-- sectionタグを使用-->
+        <section class="article">
+          <h2>ニュース2</h2>
+          <p>ここにニュースの内容が表示されます。</p>
+        </section>
+      </article>
+      
+      <!-- asideタグを使用 -->
+      <aside class="related">
         <h2>おすすめリンク</h2>
         <ul>
           <li><a href="#">リンクA</a></li>
@@ -41,8 +46,10 @@
           <li><a href="#">リンクC</a></li>
         </ul>
       </aside>
-    </div>
-    <footer>
+    </main>
+    
+    <!-- footerに変更 -->
+    <footer class="footer">
       <p>&copy; 2024 サンプルサイト. All rights reserved.</p>
     </footer>
   </body>
